@@ -10,7 +10,7 @@ In this sample, the RACF messages: **ICH302D** -- caused by maximum password att
 
 3. In **ICH3024D.asm**, the job name of the address space is checked to see if the logon is from a address space named as 'CICS????'. the program will go on only if the answer is YES and do nothing otherwise. You may change it to anything else or get rid of the checking totally. 
 
-4. Replace **CONSOLE1** with the a console name defined in RACF and CONSOLxx in SYS1.PARMLIB -- the adequate console ID that has the authority to issue a 'R xx,...' command.
+4. Replace **CONSOLE1** with a console name defined in RACF and CONSOLxx in SYS1.PARMLIB -- the adequate console ID that has the authority to issue a 'R xx,...' command.
 
 5. Once the LMD of ICH3024D generated, and the MPFLST00 (or MPFLSTxx, if a different version: 'xx' of MPFLST is used) is updated, issue **'F LLA,REFRESH'** then **'T MPF=00'** (or other version).
 
